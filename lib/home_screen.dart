@@ -57,17 +57,15 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // Imagem de destaque
               ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Image.asset(
-                  'assets/images/imagem_princial.jpg', // Corrija o nome do arquivo se necessário
+                  'assets/images/imagem_princial.jpg',
                   height: 180,
                   fit: BoxFit.cover,
                 ),
               ),
               const SizedBox(height: 20),
-              // Título estilizado
               Text(
                 'Bem-vindo à Argila Criativa!',
                 style: Theme.of(context).textTheme.headlineMedium?.copyWith(
@@ -84,7 +82,6 @@ class HomeScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 10),
-              // Frase inspiradora
               const Text(
                 '"Transformando argila em arte e tradição!"',
                 style: TextStyle(
@@ -95,7 +92,6 @@ class HomeScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 20),
-              // Botão de ação
               ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFFE2725B),
@@ -114,7 +110,6 @@ class HomeScreen extends StatelessWidget {
                 label: const Text('Ver Galeria'),
               ),
               const SizedBox(height: 24),
-              // Sugestão 7: Próximo evento/feira
               Card(
                 color: const Color(0xFFF5DEB3),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
@@ -175,7 +170,6 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 18),
-              // Cards de destaque
               Text(
                 'Destaques',
                 style: Theme.of(context).textTheme.titleLarge?.copyWith(
@@ -195,7 +189,6 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 28),
-              // Sugestão 10: Widget de Feedback/Rede Social
               Card(
                 color: const Color(0xFFF5DEB3),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
